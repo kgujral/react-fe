@@ -1,0 +1,52 @@
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-r {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper_620 {
+  min-height: calc(100vh - 184px);
+  max-width: 620px;
+  min-width: 620px;
+  background: #FFF;
+  margin: 40px auto 0;
+  border-radius: 12px 12px 0 0;
+  padding: 32px 24px 0;
+}
+
+.wrapper_630 {
+  max-width: 630px;
+  min-width: 630px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.m-40 {
+  margin-top: 40px;
+}
+
+.m-24 {
+  margin-top: 24px;
+}
+
+.mir {
+  position: relative;
+}
+
+.main-side {
+  margin-left: 80px;
+  width: calc(100% - 80px);
+}
+
+.center-relative {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

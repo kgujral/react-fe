@@ -1,0 +1,141 @@
+.leads-heading-wrapper {
+  display: flex;
+  max-width: 1000px;
+  border-left: none !important;
+  margin: 24px auto 44px !important;
+}
+
+.pagination-txt {
+  font-size: 14px;
+  font-family: Lato-Regular, sans-serif;
+  color: #4A4A4A;
+  line-height: 36px;
+}
+
+.pagination-holder {
+  min-width: 246px;
+  min-height: 36px;
+  max-height: 36px;
+  border: 0.5px solid #BBBBBB;
+  border-radius: 4px;
+  background: #F9F9F9;
+  overflow: hidden;
+}
+
+.pagination-holder > div {
+  flex-grow: 1;
+  font-family: Lato-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+  color: #8D288C;
+  text-align: center;
+  cursor: pointer
+}
+
+.pagination-holder > div:not(:last-child) {
+  border-right: 0.5px solid #BBB;
+}
+
+.pagination-active {
+  color: #9B9B9B !important;
+  background: #EFEFEF !important;
+}
+
+.special-case > span {
+  font-size: 14px;
+  font-family: Lato-Regular, sans-serif;
+  color: #676767;
+  line-height: 16px;
+}
+
+.special-case > input {
+  min-width: 48px;
+  max-width: 48px;
+  background: #FFF;
+}
+
+.pagi-ctrl label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.modal-sub > span {
+  font-family: Lato-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 48px;
+  margin-right: 32px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.m-20 {
+  margin-top: 20px;
+}
+
+.info-card {
+  background: #FFF;
+  border: 1px solid #BEBEBE;
+  padding: 22px 20px;
+  height: 100%;
+}
+
+.info-card h6 {
+  font-family: Lato-SemiBold, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  text-transform: uppercase;
+}
+
+.info-card label {
+  display: block;
+  font-family: Lato-SemiBold, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 4px;
+}
+
+.info-card p {
+  font-family: Lato-SemiBold, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 18px;
+}
+
+.update-status {
+  justify-content: space-between;
+  padding-right: 27px;
+  margin: 40px 0 24px;
+}
+
+.update-status > p {
+  font-family: Lato-SemiBold, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  text-transform: uppercase;
+}
+
+.update-status > a {
+  font-family: Lato-SemiBold, sans-serif;
+  font-size: 16px;
+  color: #8D288C;
+  cursor: pointer;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.legend-doughnut {
+  font-family: Lato-SemiBold, sans-serif;
+  font-size: 11px;
+  color: #485465;
+  display: flex;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+
+.legend-doughnut > div {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-right: 4px;
+}

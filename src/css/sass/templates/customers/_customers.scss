@@ -1,0 +1,30 @@
+.status-bulb {
+  min-width: 16px;
+  min-height: 16px;
+  max-width: 16px;
+  max-height: 16px;
+  background: #BFBFBF;
+  border-radius: 50%;
+  position: relative;
+}
+
+.status-bulb > img {
+  width: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.status-line {
+  margin-top: 8px;
+  min-height: 1px;
+  max-height: 1px;
+  min-width: 24px;
+  max-width: 24px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.status-done {
+  background: #8D288C;
+}

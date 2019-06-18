@@ -1,0 +1,132 @@
+footer {
+  @extend %leftfull;
+  min-height: 200px;
+  .container-fluid {
+    padding-top: 80px;
+    border-top: 1px solid #e5e5e5;
+  }
+  p.introduction {
+    @extend %leftfull;
+    color: $black;
+    padding: 0 24px;
+    @extend %pos-relative;
+    &:before {
+      content: "";
+      width: 40px;
+      height: 36px;
+      @extend %pos-absolute;
+      left: 0px;
+      top: 0px;
+      top: -11px;
+      z-index: -1;
+    }
+  }
+  .ceo-profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    @extend %left;
+    margin-left: 24px;
+    margin-top: 48px;
+  }
+  .name {
+    @extend %left;
+    margin-left: 24px;
+    color: $black;
+    margin-top: 62px;
+  }
+  .links {
+    @extend %left;
+    padding-left: 48px;
+    ul {
+      @extend %leftfull;
+      list-style: none;
+      li {
+        @extend %leftfull;
+        color: $primary;
+        margin-top: 24px;
+        @extend %pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      li.social-icons {
+        float: left;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #f3e9f3;
+        @extend %center;
+        line-height: 36px;
+        transition: none;
+        margin-right: 16px;
+        @extend %pointer;
+        svg {
+          color: $primary;
+          fill: $primary;
+          transition: none;
+          max-height: 17px;
+          g {
+            color: $primary;
+            fill: $primary;
+            transition: none;
+          }
+        }
+        &:hover {
+          background: $primary;
+          svg {
+            color: #ffffff;
+            fill: #ffffff;
+            g {
+              color: #ffffff;
+              fill: #ffffff;
+            }
+          }
+        }
+      }
+    }
+    p {
+      color: $black;
+      @extend %capital;
+    }
+  }
+  .copyright {
+    height: 56px;
+    margin-top: 110px;
+    @extend %leftfull;
+    background-image: linear-gradient(-40deg, #000000 0%, #191919 100%);
+    border: 1px solid #979797;
+    .logo_footer {
+      @extend %left;
+      img {
+        height: 24px;
+        margin-top: 16px;
+      }
+    }
+    span {
+      float: right;
+      opacity: 0.7;
+      @extend %font-regular;
+      font-size: 14px;
+      color: $white;
+      line-height: 55px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  footer {
+    .links {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .copyright span {
+      font-size: 12px; // color: #FFFFFF;
+      // line-height: 56px;
+    }
+  }
+}

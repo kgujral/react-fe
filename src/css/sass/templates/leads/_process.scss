@@ -1,0 +1,127 @@
+.application-process-wrap {
+  @extend %leftfull;
+  overflow: hidden;
+}
+
+.application-process {
+  @extend %pos-relative;
+  @extend %left;
+  padding-left: 24px;
+  margin-left: 8px;
+  margin-top: 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+  .white-rectangle {
+    @extend %pos-absolute;
+    background: $white;
+    width: 4px;
+    height: 4px;
+    left: -2px;
+    bottom: 0px;
+  }
+
+  .step {
+    @extend %leftfull;
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    p {
+      @extend %leftfull;
+      @extend %font-semibold;
+      color: $black;
+      margin-bottom: 4px;
+      line-height: 16px;
+      @extend %pos-relative;
+
+      &:before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        left: -34px;
+        top: -1px;
+        @extend %pos-absolute;
+      }
+    }
+
+    span {
+      @extend %font-light;
+      @extend %pos-relative;
+
+      &:before {
+        content: "";
+        background: #e5e5e5;
+        width: 5px;
+        height: 5px;
+        left: -27px;
+        top: 10px;
+        border-radius: 50%;
+        @extend %pos-absolute;
+      }
+    }
+
+    &.completed {
+      p {
+        color: $primary;
+      }
+
+      span {
+        color: $primary;
+
+        &:before {
+          background: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .application-process-wrap {
+    overflow: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .application-process-wrap::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+  }
+
+  /* optional: show position indicator in red */
+
+  .application-process-wrap::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  .application-process {
+    width: 1260px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-left: 8px;
+    margin-top: 56px;
+    border-left: none;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    .white-rectangle {
+      // background: #FFFFFF;
+      width: 100%;
+      // height: 9px;
+      // left: -2px;
+      bottom: 31px;
+    }
+
+    .step {
+      float: left;
+      width: auto;
+      padding-left: 24px;
+      padding-top: 24px;
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+}

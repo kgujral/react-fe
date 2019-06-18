@@ -1,0 +1,62 @@
+.export-it label{
+  line-height: 49px;
+  padding-right: 16px;
+}
+
+.export-it > img {
+  padding-right: 16px;
+  cursor: pointer;
+}
+
+.filter > label {
+  line-height: 36px;
+  margin-right: 8px;
+}
+
+.to-right {
+  position: relative;
+}
+
+.to-right > img {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  right: 8px;
+}
+
+.merchant-table {
+  margin-top: 16px;
+  width: 100%;
+  background: #FFF;
+  text-align: left;
+  border: 1px solid #BEBEBE;
+}
+
+.merchant-table th {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.merchant-table th:not(:last-child) {
+  border-right: 1px solid #BEBEBE;
+}
+
+.merchant-table td {
+  font-family: Lato-Regular, sans-serif;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.merchant-table td > a {
+  color: #8D288C;
+  cursor: pointer;
+}
+
+.merchant-table td:not(:last-child) {
+  border: 1px solid #BEBEBE;
+}
+
+.merchant-table tr:not(:last-child) {
+  border-bottom: 1px solid #BEBEBE;
+}

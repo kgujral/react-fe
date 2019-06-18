@@ -1,0 +1,163 @@
+.highlight-transaction {
+  min-height: 155px;
+  background: #FFF;
+}
+
+.highlight-transaction > div {
+  position: relative;
+}
+
+.highlight-transaction > div:last-child {
+  border-left: 1px solid #BEBEBE;
+  margin: 27px 0;
+}
+
+.highlight-heading {
+  padding: 8px;
+  letter-spacing: 0.6px;
+  min-height: 85px;
+  position: relative;
+  max-height: 85px;
+  border: 1px solid #BEBEBE;
+  border-radius: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.highlight-heading p {
+  text-transform: uppercase;
+  color: #000;
+  font-family: Lato-Semibold, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.highlight-heading > p:last-child {
+  text-transform: none;
+  color: #000;
+  font-family: Lato-Semibold, sans-serif;
+  font-size: 28px;
+  line-height: 60px;
+}
+
+.highlight-heading a {
+  color: #8D288C;
+  font-family: Lato-SemiBold, sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  line-height: 22px;
+}
+
+.add-merchant-highlight {
+  background: #FFF;
+  min-height: 64px;
+}
+
+.go-back {
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.go-back > p{
+  font-family: Lato-Regular, sans-serif;
+  color: #000;
+  line-height: 64px;
+  margin-left: 16px;
+}
+
+.connect-line {
+  min-width: 200px;
+  background: #BEBEBE;
+  max-height: 1px;
+  margin-top: 14px;
+}
+
+.circle-info {
+  min-width: 28px;
+  min-height: 28px;
+  background: #F5F6FA;
+  border: 1px solid #BEBEBE;
+  border-radius: 50%;
+}
+
+.circle-selected {
+  background: #8D288C;
+  border: 1px solid #8D288C;
+}
+
+.anchor > p {
+  font-family: Lato-Regular, sans-serif;
+  position: absolute;
+  color: #000;
+  font-size: 14px;
+  min-width: 107px;
+  bottom: 3px;
+  left: -35px;
+}
+
+.anchor > img {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wrapper_1100 {
+  max-width: 1100px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.edit-merch > a {
+  line-height: 64px;
+  font-family: Lato-Regular, sans-serif;
+  font-size: 16px;
+  color: #8D288C;
+  text-decoration: underline;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.school-details {
+  margin-left: 16px;
+}
+
+.school-details > h3 {
+  font-family: Lato-Regular, sans-serif;
+  color: #000;
+  line-height: 1.5rem;
+  flex-grow: 1;
+}
+
+.school-details > div {
+  flex-grow: 1;
+}
+
+.school-details span {
+  font-family: Lato-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 68px;
+  margin-left: 6px;
+}
+
+.school-details  a {
+  font-family: Lato-Regular, sans-serif;
+  color: #8D288C;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.upload-sd > button {
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+.merchant-select tr:not(:first-child):hover {
+  background: rgba(141, 40, 140, 0.1);
+  cursor: pointer;
+}

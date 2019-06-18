@@ -1,0 +1,155 @@
+/*
+
+Colors
+
+*/
+
+$white: #ffffff;
+$black: #101010;
+$yellow: #fbb034;
+$primary: #8081d8;
+$primary-hover: #5253c7;
+
+/*
+Social colours
+
+*/
+
+/*
+
+Mixins
+
+*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin translateY($y) {
+  @include transform(translateY($y));
+}
+
+@mixin translateX($y) {
+  @include transform(translateX($y));
+}
+
+/*
+
+Placeholders
+
+*/
+
+%font-regular {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: unset;
+}
+
+%font-semibold {
+  font-family: "Lato-Semibold", sans-serif;
+  font-weight: unset;
+}
+
+%font-bold {
+  font-family: "Lato-Bold", sans-serif;
+  font-weight: unset;
+}
+
+%font-heavy {
+  font-family: "Lato-Heavy", sans-serif;
+  font-weight: unset;
+}
+
+%font-black {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: unset;
+}
+
+%font-medium {
+  font-family: "Lato-Medium", sans-serif;
+  font-weight: unset;
+}
+
+%font-light {
+  font-family: "Lato-Light", sans-serif;
+  font-weight: unset;
+}
+
+%font-thin {
+  font-family: "EkMukta-Thin", sans-serif;
+  font-weight: unset;
+}
+
+%capital {
+  text-transform: uppercase;
+}
+
+%pointer {
+  cursor: pointer;
+}
+
+%left {
+  float: left;
+}
+
+%leftfull {
+  float: left;
+  width: 100%;
+}
+
+%center {
+  text-align: center;
+}
+
+%right {
+  float: right;
+}
+
+%overflow {
+  overflow: hidden;
+}
+
+%pos-relative {
+  position: relative;
+}
+
+%pos-absolute {
+  position: absolute;
+}
+
+%pos-fixed {
+  position: fixed;
+}
+
+%overflow {
+  overflow: hidden;
+}
+
+%boxsizing {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+%ease {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+%clear {
+  clear: both;
+}

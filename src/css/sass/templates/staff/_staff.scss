@@ -1,0 +1,18 @@
+.select-tabs {
+  padding: 12px 32px;
+  font-family: Lato-Bold, sans-serif;
+  font-size: 14px;
+  color: #000;
+  opacity: .4;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.selected-tab {
+  border: 1px solid #BEBEBE !important;
+  opacity: 1 !important;
+  background: #FFF;
+  border-bottom: none !important;
+  border-radius: 2px 2px 0 0;
+  text-decoration: underline;
+}

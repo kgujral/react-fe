@@ -1,0 +1,173 @@
+.family {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.family > img {
+  margin-right: 20px;
+}
+
+.family > h2 {
+  text-transform: uppercase;
+  line-height: 40px;
+  font-family: Lato-Bold, sans-serif;
+  font-size: 28px;
+  color: $primary;
+  letter-spacing: 0.2rem;
+}
+
+.no-margin-no-padding {
+  padding: 0;
+  margin: 0;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.row-100 {
+  width: 100%;
+}
+
+.row-m-60 {
+  @extend .row-100;
+  margin-top: 40px;
+}
+
+.row-m-20 {
+  @extend .row-100;
+  margin-top: 20px;
+}
+
+.padding-110 {
+  padding-top: 40px;
+}
+
+.h1-margin {
+  margin-top: 50px;
+}
+
+.m-16 {
+  margin-top: 16px;
+}
+
+.side-fix {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  background: $primary;
+  background-size: 340px;
+}
+
+.side-fix h1 {
+  color: #fff;
+}
+
+.side-logo {
+  padding: 10%;
+}
+
+.side-logo img {
+  max-height: 32px;
+  display: block;
+}
+
+.side-content {
+  width: calc(100% - 30px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-bottom: 24px;
+}
+
+.side-content > p {
+  font-family: Lato-Semibold, sans-serif;
+  font-size: 1.5rem;
+  line-height: 38px;
+  opacity: 0.8;
+  margin-top: 24px;
+}
+
+.form-content {
+  overflow: auto;
+}
+
+.side-content-only-mobile {
+  display: none;
+}
+
+.a-link-right {
+  display: block;
+  margin-top: 14px;
+  color: $black;
+  &:hover {
+    color: $primary;
+  }
+}
+
+@media (min-width: 992px) {
+  .fix-left {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .fix-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .padding-110 {
+    padding-top: 32px;
+  }
+
+  .no-padding-left-right-mobile {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .side-fix {
+    background-size: 180px;
+  }
+
+  .side-logo {
+    height: 70px;
+    padding: 2%;
+  }
+
+  .side-content {
+    position: relative;
+    width: 100%;
+    top: 0;
+    transform: translateY(0);
+  }
+
+  .h1-margin {
+    margin-top: 24px;
+  }
+
+  .form-content {
+    overflow: hidden;
+  }
+
+  .row-auto {
+    height: auto;
+  }
+
+  .family {
+    display: none;
+  }
+
+  .side-content-no-mobile {
+    display: none;
+  }
+
+  .side-content-only-mobile {
+    display: block;
+  }
+}

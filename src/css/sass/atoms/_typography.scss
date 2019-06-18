@@ -1,0 +1,54 @@
+h1 {
+    font-size: 2rem;
+    line-height: 52px;
+    color: $black;
+    @extend %font-regular;
+    @exten %leftfull;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: $black;
+    @extend %font-regular;
+    @exten %leftfull;
+}
+
+h3 {
+    @extend %font-heavy;
+    font-size: 1.5rem;
+    color: #101010;
+    line-height: 40px;
+    @exten %leftfull;
+}
+
+h4 {
+    @extend %font-heavy;
+    font-size: 1rem;
+    color: #8B94A7;
+    @extend %capital;
+    &.bold {
+        @extend %font-bold;
+        @extend %capital;
+        color: $black;
+        letter-spacing: 0.3px;
+        @extend %center;
+        line-height: 26px;
+    }
+}
+
+p {
+    @extend %font-regular;
+    font-size: 16px;
+    color: $white;
+    line-height: 26px;
+    @exten %leftfull;
+}
+
+span {
+    @extend %font-regular;
+    font-size: 12px;
+    line-height: 15px;
+    color: $black;
+    @exten %leftfull;
+}
