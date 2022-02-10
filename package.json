@@ -9,7 +9,7 @@
     "brototype": "0.0.6",
     "informed": "^1.10.12",
     "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "pubsub-js": "^1.7.0",
     "query-string": "^6.7.0",
     "react": "^16.8.6",
